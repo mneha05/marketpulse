@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=69","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="marketpulse"
+version="0.1.0"
+description="Market intelligence analysis for SEMrush/Statista-style exports with BI-ready outputs"
+requires-python=">=3.11"
+dependencies=[]
+[project.scripts]
+marketpulse="marketpulse.cli:main"
+[tool.setuptools.packages.find]
+include=["marketpulse*"]
